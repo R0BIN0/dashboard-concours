@@ -1,0 +1,264 @@
+.navbar {
+  border-right: 1px solid #4b4c50;
+}
+
+.navbar-container {
+  padding: 0 2rem;
+  /* background-color: rebeccapurple; */
+  height: 100vh;
+  position: relative;
+}
+
+/* Logo */
+
+.logo-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+  font-family: "Karantina", cursive;
+  color: #faf4de;
+  font-size: 3rem;
+  position: relative;
+}
+.logo-container svg {
+  margin-right: 1rem;
+  width: 40px;
+}
+.logo-container svg path {
+}
+.logo-container h1 {
+}
+
+.logo-container h1 span {
+  color: #b2e422;
+}
+
+/* Avatar */
+
+.avatar-container {
+  width: 100%;
+  /* background-color: rebeccapurple; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  font-family: "Karantina", cursive;
+  font-size: 2rem;
+  color: #faf4de;
+  margin-bottom: 1rem;
+}
+.avatar-container img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.avatar-name-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.avatar-name-container p {
+  margin-right: 0.5rem;
+}
+
+/* Nav */
+
+.nav-container {
+  width: 100%;
+}
+.nav-container ul {
+  width: 100%;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: column nowrap;
+}
+.nav-container ul li {
+  width: 100%;
+}
+.nav-container ul li button {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #faf4de;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  transition: 0.2s ease;
+}
+
+.nav-container ul li button[data-current="true"] {
+  background-color: rgba(79, 90, 70, 0.3);
+}
+
+.nav-container ul li button:hover {
+  background-color: rgba(79, 90, 70, 0.5);
+  padding: 0.5rem 1.5rem;
+}
+
+.nav-container ul li button svg {
+  width: 20px;
+  margin-right: 1rem;
+}
+.nav-container ul li button span {
+  font-family: "Kodchasan", sans-serif;
+}
+
+/* Disconnect */
+
+.disconnect-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #cb6969;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: "Karantina", cursive;
+  font-size: 1.75rem;
+  letter-spacing: 0.5px;
+  padding: 0 2rem;
+}
+.disconnect-container svg {
+  width: 27.5px;
+  margin-right: 1rem;
+}
+.disconnect-container svg path {
+}
+.disconnect-container span {
+  /* color: white; */
+}
+
+@media screen and (max-width: 1250px) {
+}
+@media screen and (max-width: 1024px) {
+  .navbar {
+    position: fixed;
+    width: 50px;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+  }
+
+  .navbar-container {
+    padding: 0;
+  }
+
+  /* Logo 1024 */
+
+  .logo-container {
+    width: 50px;
+    height: 50px;
+    padding: 2rem 0;
+  }
+  .logo-container svg {
+    margin: 0;
+    width: 30px;
+  }
+
+  .logo-container h1 {
+    display: none;
+  }
+
+  /* Avatar 1024 */
+
+  .avatar-container {
+    width: 50px;
+    position: relative;
+  }
+  .avatar-container img {
+    width: 50px;
+    height: 50px;
+    border-radius: 0;
+    margin-bottom: 0;
+  }
+
+  .avatar-container:hover .avatar-name-container {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .avatar-name-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transform: scale(0.9);
+    transition: 0.2s ease;
+    will-change: transform;
+  }
+  .avatar-name-container p {
+    display: none;
+  }
+
+  /* Nav 1024 */
+
+  .nav-container ul {
+    width: 100%;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: column nowrap;
+  }
+  .nav-container ul li {
+    width: 100%;
+  }
+  .nav-container ul li button {
+    justify-content: center;
+    padding: 0;
+    border-radius: 0px;
+  }
+
+  .nav-container ul li button:hover {
+    background-color: rgba(79, 90, 70, 0.5);
+    padding: 0;
+  }
+
+  .nav-container ul li button svg {
+    margin-right: 0;
+  }
+  .nav-container ul li button span {
+    display: none;
+  }
+
+  /* Disconnect 1024 */
+
+  .disconnect-container {
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .disconnect-container svg {
+    width: 22.5px;
+    margin: 0;
+  }
+
+  .disconnect-container span {
+    display: none;
+  }
+}
+@media screen and (max-width: 1024px) {
+}
+@media screen and (max-width: 1024px) {
+}
