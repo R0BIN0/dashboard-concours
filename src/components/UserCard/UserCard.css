@@ -1,0 +1,43 @@
+.userCard {
+  width: 100%;
+  background-color: #4e4f53;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.userCard-img-container {
+}
+
+.userCard-img-container img {
+  width: 50px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.userCard-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  font-family: "Kodchasan", sans-serif;
+  color: white;
+}
+
+.userCard-info div {
+}
+
+.userCard-info div p {
+  font-weight: 500;
+}
+
+.userCard-info div span {
+  font-size: 0.9rem;
+  color: #8b8d94;
+}
+
+.userCard-info div span strong {
+  font-weight: 600;
+}
