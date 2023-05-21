@@ -1,8 +1,9 @@
-import React from "react";
+import React, { FC } from "react";
 import "./UserCard.css";
 import Button from "../Button/Button";
+import { IProps } from "./UserCard.types";
 
-const UserCard = () => {
+const UserCard: FC<IProps> = (props) => {
   return (
     <div className="userCard">
       <div className="userCard-img-container">
@@ -13,9 +14,9 @@ const UserCard = () => {
       </div>
       <div className="userCard-info">
         <div>
-          <p>David Spencer</p>
+          <p>{props.name}</p>
           <span>
-            Membre depuis le <strong>20/02/2022</strong>
+            Membre depuis le <strong>{props.memberSince}</strong>
           </span>
         </div>
         <Button />

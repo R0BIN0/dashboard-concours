@@ -1,8 +1,5 @@
 .usersList {
-}
-
-.usersList-container {
-  /* height: 100vh; */
+  min-height: 500px;
 }
 
 .usersList-title-container {
