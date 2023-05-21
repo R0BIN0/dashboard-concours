@@ -8,7 +8,7 @@ const Orders = () => {
     <div className="orders">
       <div className="orders-container">
         <div className="orders-title-container">
-          <h2>Suivie des commandes</h2>
+          <h2>Suivi des commandes</h2>
         </div>
         <div className="orders-list-container">
           {productData.map((item) => (
