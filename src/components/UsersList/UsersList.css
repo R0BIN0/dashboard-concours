@@ -2,7 +2,7 @@
 }
 
 .usersList-container {
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .usersList-title-container {
@@ -57,6 +57,20 @@
   padding: 0 2rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-
   gap: 1rem;
+}
+
+@media screen and (max-width: 1250px) {
+  .userList-input-container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .users-list-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+  }
 }

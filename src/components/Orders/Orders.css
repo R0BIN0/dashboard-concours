@@ -1,11 +1,12 @@
 .orders {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background: #353639;
+  /* background-color: rebeccapurple; */
 }
 
 .orders-container {
-  height: 100vh;
+  height: 100%;
 }
 
 .orders-title-container {
@@ -45,6 +46,7 @@
 @media screen and (max-width: 1024px) {
   .orders {
     width: 100%;
+    min-height: initial;
     height: max-content;
     background: #353639;
   }

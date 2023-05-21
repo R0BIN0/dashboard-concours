@@ -1,5 +1,11 @@
 .navbar {
-  border-right: 1px solid #4b4c50;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 350px;
+  height: 100vh;
+  z-index: 1000;
+  min-height: 700px;
 }
 
 .navbar-container {
@@ -140,7 +146,10 @@
   /* color: white; */
 }
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1500px) {
+  .navbar {
+    width: 250px;
+  }
 }
 @media screen and (max-width: 1024px) {
   .navbar {

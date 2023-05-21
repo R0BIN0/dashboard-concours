@@ -1,0 +1,84 @@
+.dashboard {
+  height: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.dashboard-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+
+.dashboard-title-container {
+  color: white;
+  font-family: "Karantina", cursive;
+  font-size: 2rem;
+  padding: 3.5rem 2rem;
+  padding-bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  width: 100%;
+}
+
+.dashboard-title-container h2 {
+  margin-bottom: 2rem;
+}
+
+.dashboard-data-flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  flex-flow: row wrap;
+}
+
+.dashboard-data-container {
+  position: relative;
+  padding: 2rem;
+}
+
+.dashboard-text-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  text-align: center;
+  font-family: "Kodchasan", sans-serif;
+  color: white;
+}
+
+.dashboard-text-content span {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #b2e422;
+}
+
+.dashboard-text-content p {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.bg-svg {
+  stroke: #4b4b4b;
+  stroke-width: 30;
+}
+
+.filled {
+  stroke: #b2e422;
+  stroke-width: 30;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  transition: 1s ease;
+}
