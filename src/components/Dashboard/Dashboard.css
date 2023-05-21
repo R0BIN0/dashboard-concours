@@ -70,12 +70,12 @@
   font-weight: 500;
 }
 
-.bg-svg {
+.dashboard-svg-background {
   stroke: #4b4b4b;
   stroke-width: 30;
 }
 
-.filled {
+.dashboard-svg-filled {
   stroke: #b2e422;
   stroke-width: 30;
   stroke-dasharray: 1;

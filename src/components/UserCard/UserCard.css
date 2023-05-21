@@ -9,11 +9,18 @@
 }
 
 .userCard-img-container {
+  position: relative;
+  width: 110px;
+  height: 80px;
 }
 
 .userCard-img-container img {
-  width: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 100%;
+
   object-fit: cover;
 }
 
@@ -25,9 +32,6 @@
   padding: 0 2rem;
   font-family: "Kodchasan", sans-serif;
   color: white;
-}
-
-.userCard-info div {
 }
 
 .userCard-info div p {

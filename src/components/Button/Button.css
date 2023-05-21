@@ -6,6 +6,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.2s ease;
+}
+
+.main-button:hover {
+  background: #b2e422 !important;
+}
+
+.main-button:hover svg path {
+  fill: rgb(53, 53, 53);
 }
 
 .main-button svg {

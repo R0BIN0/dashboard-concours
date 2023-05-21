@@ -1,6 +1,7 @@
 import React from "react";
 import "./Orders.css";
 import ProductOrder from "../ProductOrder/ProductOrder";
+import { productData } from "../../data/product.data";
 
 const Orders = () => {
   return (
@@ -10,11 +11,9 @@ const Orders = () => {
           <h2>Suivie des commandes</h2>
         </div>
         <div className="orders-list-container">
-          <ProductOrder />
-          <ProductOrder />
-          <ProductOrder />
-          <ProductOrder />
-          <ProductOrder />
+          {productData.map((item) => (
+            <ProductOrder key={item.id} {...item} />
+          ))}
         </div>
       </div>
     </div>

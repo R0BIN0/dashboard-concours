@@ -1,5 +1,6 @@
 .usersList {
   min-height: 500px;
+  position: relative;
 }
 
 .usersList-title-container {
@@ -23,7 +24,6 @@
   width: 400px;
   display: flex;
   justify-content: flex-end;
-  /* margin-top: 1rem; */
 }
 .userList-input-container svg {
   position: absolute;
@@ -55,6 +55,17 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 1rem;
+}
+
+.user-list-no-user {
+  color: white;
+  font-family: "Kodchasan", sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  line-height: 1.2;
 }
 
 @media screen and (max-width: 1250px) {

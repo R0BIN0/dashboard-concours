@@ -1,6 +1,3 @@
-export type IProps = {
-  id: string;
-  name: string;
-  memberSince: string;
-  picture: string;
-};
+import { IUser } from "../../data/users.data";
+
+export type IProps = IUser;

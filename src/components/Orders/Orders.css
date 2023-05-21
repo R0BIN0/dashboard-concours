@@ -2,7 +2,6 @@
   width: 100%;
   min-height: 100vh;
   background: #353639;
-  /* background-color: rebeccapurple; */
 }
 
 .orders-container {
@@ -14,9 +13,6 @@
   font-family: "Karantina", cursive;
   font-size: 2rem;
   padding: 3.5rem 2rem;
-}
-
-.orders-title-container h2 {
 }
 
 .orders-list-container {

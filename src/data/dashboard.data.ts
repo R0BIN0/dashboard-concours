@@ -1,6 +1,12 @@
 import { v4 as uuidv4 } from "uuid";
 
-export const dashboardData = [
+export type IDashboard = {
+  id: string;
+  percentage: number;
+  title: string;
+};
+
+export const dashboardData: IDashboard[] = [
   {
     id: uuidv4(),
     percentage: 95,
@@ -9,11 +15,11 @@ export const dashboardData = [
   {
     id: uuidv4(),
     percentage: 33,
-    title: "Chiffres d'affaires",
+    title: "Nouveaux produits",
   },
   {
     id: uuidv4(),
-    percentage: 30,
+    percentage: 53,
     title: "Nouveaux clients",
   },
 ];

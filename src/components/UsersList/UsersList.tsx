@@ -2,10 +2,22 @@ import React, { useState } from "react";
 import "./UsersList.css";
 import UserCard from "../UserCard/UserCard";
 import { ReactComponent as SearchIcon } from "../../assets/search.svg";
-import { usersData } from "../../data/users.data";
+import { IUser, usersData } from "../../data/users.data";
 
 const UsersList = () => {
   const [searchKeyword, setSearchKeyword] = useState<string>("");
+  const [selectedUsers, setSelectedUsers] = useState<IUser[]>(usersData);
+
+  const handleKeyword = (value: string): void => {
+    setSearchKeyword(value);
+    if (!value) return setSelectedUsers(usersData);
+    const users = selectedUsers.filter((val) =>
+      searchKeyword === undefined
+        ? val
+        : val.name.toLowerCase().includes(value.toLowerCase()) && val
+    );
+    setSelectedUsers(users);
+  };
 
   return (
     <div className="usersList">
@@ -18,24 +30,19 @@ const UsersList = () => {
               type="text"
               placeholder="Rechercher des utilisateurs"
               value={searchKeyword}
-              onChange={(e) => setSearchKeyword(e.target.value)}
+              onChange={(e) => handleKeyword(e.target.value)}
             />
           </div>
         </div>
         <div className="users-list-container">
-          <>
-            {usersData
-              .filter((val) =>
-                searchKeyword === undefined
-                  ? val
-                  : val.name
-                      .toLowerCase()
-                      .includes(searchKeyword.toLowerCase()) && val
-              )
-              .map((item) => (
-                <UserCard key={item.id} {...item} />
-              ))}
-          </>
+          {selectedUsers.map((item) => (
+            <UserCard key={item.id} {...item} />
+          ))}
+          {!selectedUsers.length && (
+            <p className="user-list-no-user">
+              Aucun utilisateur n'a été trouvé avec ce nom
+            </p>
+          )}
         </div>
       </div>
     </div>
